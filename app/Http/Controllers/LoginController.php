@@ -8,12 +8,14 @@ use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
+
 
 class LoginController extends Controller
 {
-    public function index()
+    public function login2()
     {
-        return view('login');
+        return view('login2');
     }
     public function login(Request $request)
     {
@@ -48,4 +50,5 @@ class LoginController extends Controller
     {
         return view('manager_dashboard');
     }
+    
 }
